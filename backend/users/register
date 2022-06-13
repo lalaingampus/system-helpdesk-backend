@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>Register Users</title>
+</head>
+ 
+<body>
+	<a href="../index.php">Go to Home</a>
+	<br/><br/>
+ 
+	<form action="register.php" method="post">
+		<table width="25%" border="0">
+		<tr> 
+				<td>Name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr> 
+				<td>Username</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr> 
+				<td>Password</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr> 
+				<td>Vendor</td>
+				<td>  
+					<select id="group" name="group">
+					<option value="">Please Choose</option>
+                                <?php
+                                  $sql = "select * from groups";
+                                  $hasil = mysqli_query($mysqli, $sql);
+                                  $no=0;
+                                  while($project = mysqli_fetch_array($hasil)) {
+                                    $no++;
+                                    ?>
+                                    <option value="<?php echo $project['id_group'];?>"><?php echo $project['name_group'];?></option>
+                                  <?php
+                                  }
+                                ?>         
+                    </select>
+				</td>
+				
+			</tr>
+            <tr> 
+				<td>No. Handphone</td>
+				<td><input type="text" name="phone">
+			</td>
+			</tr>
+			<tr> 
+				<td></td>
+				<td><input type="submit" name="Submit" value="Add"></td>
+			</tr>
+		</table>
+	</form>
+	
+	<?php
+ 
+	// Check If form submitted, insert form data into users table.
+	if(isset($_POST['Submit'])) {
+		$name = $_POST['email'];
+		$username = $_POST['username'];
+		$password = md5($_POST['password']);
+	
+		
+		// include database connection file
+		include_once("../setting/config.php");
+				
+		// Insert user data into table
+		$result = mysqli_query($mysqli, "INSERT INTO user(email, username, password,group,phone) VALUES('$email','$username','$password','$group','$no_hp')");
+		
+		if ( $result ) {
+			header('Location: ../user.php?status=berhasil');
+	
+		} else {
+			header('Location: ../user.php?status=gagal');
+			
+		}
+	}
+	?>
+</body>
+</html>

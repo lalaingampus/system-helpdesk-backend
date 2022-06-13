@@ -1,0 +1,280 @@
+.panel-heading {
+ position: absolute;
+ width: 1280px;
+ height: 35px;
+ left: 0px;
+ top: 0px;
+ background: rgba(104,103,103,0.6);
+ filter: blur(0.1px);
+}
+
+.panel-title {
+ position: absolute;
+ width: 375px;
+ height: 42px;
+ left: 562px;
+ top: 0px;
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 20px;
+ line-height: 42px;
+ color: #ffffff;
+}
+
+.panel-span {
+ position: absolute;
+ width: 375px;
+ height: 42px;
+ left: 112px;
+ top: 0px;
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 20px;
+ line-height: 42px;
+ color: #B5B5B5;
+}
+
+.container {
+ position: relative;
+ height: 768px;
+ width: 1280px;
+ background: url(assets/images/Background.png);
+}
+
+.panel-body {
+ position: absolute;
+ width: 480px;
+ height: 650px;
+ left: 424px;
+ top: 70px;
+
+ background: rgba(76, 95, 115, 0.7);
+ border-radius: 20px;
+}
+
+.logo {
+ position: absolute;
+ width: 174.99px;
+ height: 152px;
+ left: 150px;
+ top: 50px;
+}
+
+.text-logo {
+ position: absolute;
+ width: 280px;
+ height: 152px;
+ left: 115px;
+ top: 220px;
+
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 400; 
+ font-size: 40px;
+ line-height: 48px;
+
+ color: #e9e9e9;
+}
+
+.text-logo-p {
+ position: absolute;
+ width: 280px;
+ height: 152px;
+ left: 150px;
+ top: 265px;
+
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 17px;
+ line-height: 48px;
+
+ color: #e9e9e9;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  left: 70px;
+  top: 320px;
+  margin-top: 10px;
+  width: 70%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid rgba(215, 215, 215, 0.5);
+  outline: 0;
+  font-size: 1rem;
+  color: #e9e9e9;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #e9e9e9;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-color: #fff;
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+.btn {
+position: absolute;
+width: 165px;
+height: 20px;
+left: 140px;
+top: 472px;
+
+font-family: 'Exo';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+.info {
+  position: absolute;
+  width: 165px;
+  height: 20px;
+  left: 140px;
+  top: 472px;
+  
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height */
+  
+  
+  color: #FFFFFF;
+  }
+
+  .info-p {
+    position: absolute;
+    text-decoration: none;
+    width: 165px;
+    height: 20px;
+    left: 170px;
+    top: 0px;
+    
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    
+    color: red;
+  }
+
+.btn {
+position: absolute;
+width: 150px;
+height: 41.43px;
+left: 161px;
+top: 520px;
+
+background: #37C1FF;
+box-shadow: 0px 4px 4px rgba(149, 149, 149, 0.25);
+border-radius: 10px; 
+ 
+}
+
+/* .login {
+  position: absolute;
+width: 62px;
+height: 24px;
+left: 55px;
+top: 10px;
+
+text-decoration: none;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+} */
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 6px 55px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Inter';
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.forgot {
+  position: absolute;
+  width: 118px;
+  height: 20px;
+  left: 190px;
+  top: 593px;
+  
+}
+
+.forget-p {
+  position: absolute;
+  width: 118px;
+  height: 20px;
+  
+   
+  text-decoration: none;
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height */
+  
+  
+  color: white;
+}
